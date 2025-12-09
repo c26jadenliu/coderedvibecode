@@ -122,6 +122,7 @@
   .brand-mark {
     width: 36px;
     height: 36px;
+    aspect-ratio: 1 / 1;
     border-radius: 14px;
     background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
     box-shadow: 0 16px 32px rgba(15, 23, 42, 0.9);
@@ -129,6 +130,7 @@
     place-items: center;
     padding: 4px;
     border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
   }
 
   .brand-mark img,
@@ -138,11 +140,13 @@
     max-height: 100%;
     display: block;
     object-fit: contain;
+    aspect-ratio: 1 / 1;
   }
 
   .logo-chip {
     width: 54px;
     height: 54px;
+    aspect-ratio: 1 / 1;
     border-radius: 16px;
     background: radial-gradient(circle at 25% 20%, rgba(236, 72, 153, 0.15), rgba(124, 58, 237, 0.08)),
       linear-gradient(135deg, rgba(124, 58, 237, 0.24), rgba(239, 68, 68, 0.14));

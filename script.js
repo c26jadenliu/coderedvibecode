@@ -53,3 +53,28 @@
 
   revealEls.forEach((el) => observer.observe(el));
 })();
+
+// External image fallback
+(function () {
+  const fallbackSrc = "assets/images/gallery-fallback.svg";
+  const externalImages = Array.from(document.images).filter((img) =>
+    img.src.includes("projectcodered.com/wp-content/uploads")
+  );
+
+  externalImages.forEach((img) => {
+    img.decoding = "async";
+    img.loading = img.loading || "lazy";
+    img.addEventListener("error", () => {
+      if (img.dataset.fallbackApplied) return;
+      img.dataset.fallbackApplied = "true";
+      img.src = fallbackSrc;
+      img.removeAttribute("srcset");
+      img.removeAttribute("referrerpolicy");
+      img.alt = img.alt || "Project Code Red community highlight";
+    });
+
+    if (img.complete && img.naturalWidth === 0) {
+      img.dispatchEvent(new Event("error"));
+    }
+  });
+})();
