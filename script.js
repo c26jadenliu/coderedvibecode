@@ -53,3 +53,25 @@
 
   revealEls.forEach((el) => observer.observe(el));
 })();
+
+// Ensure gallery images lazy-load by default
+(function () {
+  Array.from(document.images).forEach((img) => {
+    if (!img.loading) img.loading = "lazy";
+    if (!img.decoding) img.decoding = "async";
+  });
+})();
+
+// Fallback for any gallery art that fails to load
+(function () {
+  const fallbackSrc = "assets/images/gallery-fallback.svg";
+  Array.from(document.images)
+    .filter((img) => img.src.includes("assets/images/pcr"))
+    .forEach((img) => {
+      img.addEventListener("error", () => {
+        if (img.dataset.hasFallback) return;
+        img.dataset.hasFallback = "true";
+        img.src = fallbackSrc;
+      });
+    });
+})();
