@@ -1,0 +1,22 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project Code Red live event energy">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1224" />
+      <stop offset="1" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#e11d48" stop-opacity="0.85" />
+      <stop offset="1" stop-color="#22c55e" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="48" fill="url(#bg)" />
+  <rect x="120" y="120" width="1360" height="660" rx="44" fill="#0f172a" stroke="#2563eb" stroke-width="10" opacity="0.9" />
+  <path d="M140 640 C400 560 620 560 900 640 C1160 720 1360 720 1460 640" fill="none" stroke="#f472b6" stroke-width="14" opacity="0.6" />
+  <path d="M160 420 C460 340 960 320 1360 420" fill="none" stroke="#22d3ee" stroke-width="12" opacity="0.6" />
+  <circle cx="400" cy="320" r="120" fill="url(#accent)" opacity="0.7" />
+  <circle cx="1240" cy="360" r="150" fill="#a855f7" opacity="0.35" />
+  <rect x="520" y="520" width="560" height="200" rx="26" fill="#0b1224" stroke="#38bdf8" stroke-width="8" opacity="0.85" />
+  <text x="580" y="600" fill="#e5e7eb" font-size="64" font-family="'Segoe UI','Inter',sans-serif" font-weight="700">Live on stage</text>
+  <text x="580" y="660" fill="#cbd5e1" font-size="38" font-family="'Segoe UI','Inter',sans-serif" font-weight="500">Streamers, squads, and supporters</text>
+  <text x="180" y="820" fill="#c084fc" font-size="42" font-family="'Segoe UI','Inter',sans-serif" font-weight="600">Project Code Red · Gaming for good · Verified charity</text>
+</svg>
