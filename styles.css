@@ -119,7 +119,7 @@
     gap: 0.7rem;
   }
   
-  .brand-mark {
+.brand-mark {
     width: 36px;
     height: 36px;
     aspect-ratio: 1 / 1;
@@ -131,6 +131,7 @@
     padding: 4px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     overflow: hidden;
+    flex-shrink: 0;
   }
 
   .brand-mark img,
@@ -143,7 +144,7 @@
     aspect-ratio: 1 / 1;
   }
 
-  .logo-chip {
+.logo-chip {
     width: 54px;
     height: 54px;
     aspect-ratio: 1 / 1;
@@ -155,6 +156,7 @@
     padding: 8px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 20px 32px rgba(15, 23, 42, 0.35);
+    flex-shrink: 0;
   }
   
   .brand-title {
