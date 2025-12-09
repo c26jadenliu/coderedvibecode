@@ -54,9 +54,10 @@
   revealEls.forEach((el) => observer.observe(el));
 })();
 
-// External image fallback
+// External image proxy + fallback
 (function () {
   const fallbackSrc = "assets/images/gallery-fallback.svg";
+  const proxyBase = "https://images.weserv.nl/?url=";
   const externalImages = Array.from(document.images).filter((img) =>
     img.src.includes("projectcodered.com/wp-content/uploads")
   );
@@ -64,12 +65,21 @@
   externalImages.forEach((img) => {
     img.decoding = "async";
     img.loading = img.loading || "lazy";
+
+    // Proxy the image through a CDN that allows hotlinking to avoid host blocks.
+    if (!img.dataset.proxied) {
+      const urlWithoutProtocol = img.src.replace(/^https?:\/\//, "");
+      const encoded = encodeURIComponent(urlWithoutProtocol);
+      img.dataset.originalSrc = img.src;
+      img.src = `${proxyBase}${encoded}&w=1600&output=jpg`;
+      img.dataset.proxied = "true";
+    }
+
     img.addEventListener("error", () => {
       if (img.dataset.fallbackApplied) return;
       img.dataset.fallbackApplied = "true";
       img.src = fallbackSrc;
       img.removeAttribute("srcset");
-      img.removeAttribute("referrerpolicy");
       img.alt = img.alt || "Project Code Red community highlight";
     });
 
