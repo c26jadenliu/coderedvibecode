@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Project Code Red logo">
+  <defs>
+    <linearGradient id="crGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <rect x="14" y="14" width="228" height="228" rx="54" fill="#0b1224" fill-opacity="0.9" stroke="#ffffff" stroke-opacity="0.08" stroke-width="6" />
+  <g transform="translate(34 48)">
+    <path fill="url(#crGradient)" d="M32 28c0-15.46 12.54-28 28-28h76c33.14 0 60 26.86 60 60v16c0 33.14-26.86 60-60 60H60c-15.46 0-28-12.54-28-28V28Zm38 12v60h64c15.46 0 28-12.54 28-28s-12.54-28-28-28H70Z"/>
+    <path fill="url(#crGradient)" d="M140 0h52c20.99 0 38 17.01 38 38v22c0 17.36-9.68 32.55-24 39.95l20 30.05h-38l-16.5-24.8H140v24.8h-38V0h38Z"/>
+  </g>
+</svg>

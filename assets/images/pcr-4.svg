@@ -1,0 +1,18 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project Code Red creators and students">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827" />
+      <stop offset="1" stop-color="#312e81" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="50" fill="url(#bg4)" />
+  <rect x="120" y="140" width="1360" height="620" rx="42" fill="#0b1224" opacity="0.92" stroke="#c084fc" stroke-width="8" />
+  <circle cx="320" cy="320" r="140" fill="#22d3ee" opacity="0.4" />
+  <circle cx="1180" cy="320" r="160" fill="#ec4899" opacity="0.3" />
+  <rect x="300" y="260" width="1000" height="420" rx="36" fill="#0f172a" stroke="#22d3ee" stroke-width="6" opacity="0.92" />
+  <text x="360" y="360" fill="#e0f2fe" font-size="62" font-family="'Segoe UI','Inter',sans-serif" font-weight="700">Creators x Classrooms</text>
+  <text x="360" y="420" fill="#cbd5e1" font-size="34" font-family="'Segoe UI','Inter',sans-serif" font-weight="500">Mentorship streams, device drives, mental wellness check-ins</text>
+  <text x="360" y="520" fill="#fef3c7" font-size="46" font-family="'Segoe UI','Inter',sans-serif" font-weight="700">Los Angeles, CA</text>
+  <text x="360" y="580" fill="#d1d5db" font-size="32" font-family="'Segoe UI','Inter',sans-serif" font-weight="500">Project Code Red partners with schools and shelters to keep learners online.</text>
+  <path d="M180 700 Q800 820 1420 700" stroke="#38bdf8" stroke-width="10" fill="none" opacity="0.6" />
+</svg>
